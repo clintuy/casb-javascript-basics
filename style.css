@@ -1,0 +1,45 @@
+/* Global CSS */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+.container {
+    margin: 0 10%;
+}
+.text-center {
+    text-align: center;
+}
+.btn { 
+    cursor: pointer;
+    margin: .3rem 1rem;
+    padding: .5rem 2rem;
+}
+.btn-primary {
+
+    color: white;
+    background-color: royalblue;
+    border: none;
+}
+
+.txt {
+    margin: .3rem 1rem;
+    padding: .5rem 2rem;
+}
+/* Global CSS */
+
+
+
+.container .login-container {
+    border:1px solid gray;
+    margin: 1rem 35%;
+    background-color: white;
+    padding: 1rem;
+    min-height: 20rem;
+}
+
+ul.items {
+    font-size:16px;
+    padding: 2rem;
+}

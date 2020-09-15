@@ -66,34 +66,34 @@
 // };
 // ---------------------------------------------------
 
-// Example No. 2 - Array Objects
-const Person = [
+// // Example No. 2 - Array Objects
+// const Person = [
 
-    {
-        id: 1,
-        fullName: "Clintuy Design",
-        email: "test1@test.com",
-        device: "Mobile"
-    },
-    {
-        id: 2,
-        fullName: "Wystuy Design",
-        email: "test2@test.com",
-        device: "Mobile"
-    },
-    {
-        id: 3,
-        fullName: "Tabiboy Design",
-        email: "test3@test.com",
-        device: "Desktop"
-    },
-    {
-        id: 4,
-        fullName: "Matt Design",
-        email: "test4@test.com",
-        device: "Desktop"
-    },
-];
+//     {
+//         id: 1,
+//         fullName: "Clintuy Design",
+//         email: "test1@test.com",
+//         device: "Mobile"
+//     },
+//     {
+//         id: 2,
+//         fullName: "Wystuy Design",
+//         email: "test2@test.com",
+//         device: "Mobile"
+//     },
+//     {
+//         id: 3,
+//         fullName: "Tabiboy Design",
+//         email: "test3@test.com",
+//         device: "Desktop"
+//     },
+//     {
+//         id: 4,
+//         fullName: "Matt Design",
+//         email: "test4@test.com",
+//         device: "Desktop"
+//     },
+// ];
 // ---------------------------------------------------
 
 // // For Loop
@@ -179,7 +179,7 @@ const Person = [
 // // JSON - JavaScript Object Notation
 // const PersonJSON = JSON.stringify(Person);
 // console.log(PersonJSON);
-
+// ---------------------------------------------------
 
 // // Conditionals
 // const x = 300;
@@ -195,14 +195,118 @@ const Person = [
 // } else {
 //     console.log("not 100");
 // }
+// ---------------------------------------------------
 
 // Function types
-let x = 10;
-let y = 20;
+// let x = 10;
+// let y = 20;
 
-// aritmethic +, -, *, /, %, **
-function GetSum(x, y) {
-    return x + y;
-}
+// // aritmethic +, -, *, /, %, **
+// function GetSum(x, y) {
+//     return x + y;
+// }
+// ---------------------------------------------------
 
-console.log()
+// // Function - ES6
+// const GetSum = (x, y) => {
+//     return x + y;
+// }
+
+// OR
+
+// if less condition
+// const GetSum = (x, y) => x + y;
+// console.log(GetSum(100, 300));
+// ---------------------------------------------------
+
+// OOP Class Concept
+
+
+// class Person {
+//     constructor(firstName, lastName) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//     }
+
+//     getFullName() {
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
+
+// function Person(firstName, lastName) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+
+//     this.getFullName = () => {
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
+
+// // Instantiate Object
+// const newPerson = new Person('Clintuy', 'Design');
+
+// console.log(newPerson.getFullName());
+// ---------------------------------------------------
+
+// DOM(Document Object Model) Selection
+
+// const form = document.getElementById("<id>"); = using attribute ID get value from HTML
+// const form2 = document.getElementsByClassName("<class>") using Class attribute get value from HTML
+// const form3 = document.querySelector("<#id> or <.name>"); using (#) -> for ID (.) -> for ClassName get value from HTML - RECOMMENDED
+// const form4 = document.querySelectorAll("<#id> or <.name>") using (#) -> for ID (.) -> for ClassName formatted with array
+
+// const ul = document.querySelector(".items");
+
+//Removing
+// ul.remove(); = remove ul data
+//ul.lastElementChild.remove(); = remove ul lastElementChild
+// ul.firstElementChild.remove();
+
+//Adding
+// ul.firstElementChild.textContent = "ClintuyDesign"; = add ul firstElementChild
+// ul.children[2].innerText = "ClintuyDesign" = change value base on index no
+// ul.lastElementChild.innerHTML = "<h3>ClintuyDesign</h3>" change with html tags
+
+// console.log(ul);
+
+
+// const btnLogin = document.querySelector('#btnLogin');
+// btnLogin.style.background = 'red';
+
+// // DOM Events
+// const btnLogin = document.querySelector('#btnLogin');
+// const loginContainer = document.querySelector('.login-container');
+
+
+// btnLogin.addEventListener("click", function(e) {
+//     e.preventDefault();
+
+//     loginContainer.style.background = 'black';
+
+    
+// });
+
+// Form Validation
+const btnLogin = document.querySelector('#btnLogin');
+const username = document.querySelector('#username');
+const password = document.querySelector('#password');
+
+btnLogin.addEventListener("click", function(e) {
+    e.preventDefault();
+    
+
+    if(username.value.length == 0) {
+        alert("Username Field Required!");
+    }
+    else if(password.value.length == 0) {
+        alert("Password Field Required!");
+    }
+    else {
+        alert(`${username.value} and ${password.value} is this`)
+    }
+});
+
+
+
+
+
